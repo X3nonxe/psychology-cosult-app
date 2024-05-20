@@ -4,6 +4,7 @@ import 'package:konsultasi_psikologi/screens/Views/appointment.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/date_select.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/psycholog_list.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/time_select.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -114,9 +115,8 @@ class _PsychologDetailsState extends State<PsychologDetails> {
                           showExtendedText ? "Read less" : "Read more",
                           style: TextStyle(
                             color: showExtendedText
-                                ? const Color.fromARGB(255, 1, 128, 111)
-                                : const Color.fromARGB(255, 1, 128,
-                                    111), // Change color based on visibility
+                                ? bluePrimaryColor
+                                : bluePrimaryColor, // Change color based on visibility
                           ),
                         ),
                       ],
@@ -219,50 +219,49 @@ class _PsychologDetailsState extends State<PsychologDetails> {
                 padding: const EdgeInsets.symmetric(
                   horizontal: 40,
                 ),
-                child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        height: MediaQuery.of(context).size.height * 0.06,
-                        width: MediaQuery.of(context).size.width * 0.1300,
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 247, 247, 247),
-                            borderRadius: BorderRadius.circular(18),
-                            image: const DecorationImage(
-                                image: AssetImage(
-                                  "lib/icons/Chat.png",
-                                ),
-                                filterQuality: FilterQuality.high)),
+                child:
+                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                  // Container(
+                  //   height: MediaQuery.of(context).size.height * 0.06,
+                  //   width: MediaQuery.of(context).size.width * 0.1300,
+                  //   decoration: BoxDecoration(
+                  //       color: const Color.fromARGB(255, 247, 247, 247),
+                  //       borderRadius: BorderRadius.circular(18),
+                  //       image: const DecorationImage(
+                  //           image: AssetImage(
+                  //             "lib/icons/Chat.png",
+                  //           ),
+                  //           filterQuality: FilterQuality.high)),
+                  // ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushReplacement(
+                          context,
+                          PageTransition(
+                              type: PageTransitionType.rightToLeft,
+                              child: const Appointment()));
+                    },
+                    child: Container(
+                      height: MediaQuery.of(context).size.height * 0.06,
+                      width: MediaQuery.of(context).size.width * 0.6300,
+                      decoration: BoxDecoration(
+                        color: bluePrimaryColor,
+                        borderRadius: BorderRadius.circular(30),
                       ),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushReplacement(
-                              context,
-                              PageTransition(
-                                  type: PageTransitionType.rightToLeft,
-                                  child: const Appointment()));
-                        },
-                        child: Container(
-                          height: MediaQuery.of(context).size.height * 0.06,
-                          width: MediaQuery.of(context).size.width * 0.6300,
-                          decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 2, 179, 149),
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "Buat Janji",
-                                  style: GoogleFonts.poppins(
-                                      fontSize: 15.sp,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w500),
-                                )
-                              ]),
-                        ),
-                      ),
-                    ]),
+                      child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Buat Janji",
+                              style: GoogleFonts.openSans(
+                                  fontSize: 15.sp,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w500),
+                            )
+                          ]),
+                    ),
+                  ),
+                ]),
               ),
             ),
           ],

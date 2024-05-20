@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:konsultasi_psikologi/screens/Views/homepage.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/article.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -15,7 +16,7 @@ class ArticlePage extends StatelessWidget {
         backgroundColor: Colors.white,
         title: Text(
           "Artikel",
-          style: GoogleFonts.poppins(
+          style: GoogleFonts.montserrat(
             fontSize: 20,
             color: const Color.fromARGB(255, 100, 98, 98),
           ),
@@ -73,7 +74,7 @@ class ArticlePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  prefixIconColor: const Color.fromARGB(255, 3, 190, 150),
+                  prefixIconColor: bluePrimaryColor,
                   label: const Text("Cari psikolog, artikel, topik..."),
                   floatingLabelBehavior: FloatingLabelBehavior.never,
                   border: OutlineInputBorder(
@@ -93,7 +94,7 @@ class ArticlePage extends StatelessWidget {
               children: [
                 Text(
                   "Artikel Populer",
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.montserrat(
                     fontSize: 18,
                     fontWeight: FontWeight.w500,
                   ),
@@ -118,7 +119,7 @@ class ArticlePage extends StatelessWidget {
                       height: 20,
                       width: 120,
                       decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 2, 173, 131),
+                        color: bluePrimaryColor,
                         borderRadius: BorderRadius.all(
                           Radius.circular(12),
                         ),
@@ -126,7 +127,7 @@ class ArticlePage extends StatelessWidget {
                       child: Center(
                           child: Text(
                         "Covid-19",
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.openSans(
                             fontSize: 15,
                             fontWeight: FontWeight.w600,
                             color: Colors.white,
@@ -140,15 +141,15 @@ class ArticlePage extends StatelessWidget {
                       height: 20,
                       width: 120,
                       decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 2, 173, 131),
+                        color: bluePrimaryColor,
                         borderRadius: BorderRadius.all(
                           Radius.circular(12),
                         ),
                       ),
                       child: Center(
                           child: Text(
-                        "Diet",
-                        style: GoogleFonts.poppins(
+                        "Stress",
+                        style: GoogleFonts.openSans(
                             fontSize: 15,
                             fontWeight: FontWeight.w600,
                             color: Colors.white,
@@ -162,15 +163,15 @@ class ArticlePage extends StatelessWidget {
                       height: 20,
                       width: 120,
                       decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 2, 173, 131),
+                        color: bluePrimaryColor,
                         borderRadius: BorderRadius.all(
                           Radius.circular(12),
                         ),
                       ),
                       child: Center(
                           child: Text(
-                        "Fitness",
-                        style: GoogleFonts.poppins(
+                        "Anxiety",
+                        style: GoogleFonts.openSans(
                             fontSize: 15,
                             fontWeight: FontWeight.w600,
                             color: Colors.white,
@@ -187,15 +188,15 @@ class ArticlePage extends StatelessWidget {
                       height: 20,
                       width: 120,
                       decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 2, 173, 131),
+                        color: bluePrimaryColor,
                         borderRadius: BorderRadius.all(
                           Radius.circular(12),
                         ),
                       ),
                       child: Center(
                           child: Text(
-                        "Medicines",
-                        style: GoogleFonts.poppins(
+                        "Mental",
+                        style: GoogleFonts.openSans(
                             fontSize: 15,
                             fontWeight: FontWeight.w600,
                             color: Colors.white,
@@ -217,7 +218,7 @@ class ArticlePage extends StatelessWidget {
               children: [
                 Text(
                   "Artikel Trending",
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.montserrat(
                     fontSize: 18,
                     fontWeight: FontWeight.w500,
                   ),
@@ -281,11 +282,10 @@ class ArticlePage extends StatelessWidget {
                                     children: [
                                       Text(
                                         "Covid",
-                                        style: GoogleFonts.poppins(
+                                        style: GoogleFonts.openSans(
                                             fontSize: 10,
                                             fontWeight: FontWeight.w500,
-                                            color: const Color.fromARGB(
-                                                255, 6, 110, 102)),
+                                            color: bluePrimaryColor),
                                       ),
                                     ]),
                               ),
@@ -295,7 +295,7 @@ class ArticlePage extends StatelessWidget {
                                   const EdgeInsets.symmetric(horizontal: 15),
                               child: Text(
                                 "Bandingkan Vaksin Covid-19 AstraZeneca dan Sinovac",
-                                style: GoogleFonts.inter(
+                                style: GoogleFonts.openSans(
                                     fontSize: 13.sp,
                                     fontWeight: FontWeight.w600,
                                     color: const Color.fromARGB(255, 0, 0, 0)),
@@ -311,7 +311,7 @@ class ArticlePage extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Jun 10, 2024 ",
-                                    style: GoogleFonts.poppins(
+                                    style: GoogleFonts.openSans(
                                         fontSize: 11.sp,
                                         fontWeight: FontWeight.w300),
                                   ),
@@ -320,9 +320,9 @@ class ArticlePage extends StatelessWidget {
                                   ),
                                   Text(
                                     "Dibaca 5 menit",
-                                    style: GoogleFonts.poppins(
+                                    style: GoogleFonts.openSans(
                                         fontSize: 11.sp,
-                                        color: const Color.fromARGB(255, 0, 136, 102),
+                                        color: bluePrimaryColor,
                                         fontWeight: FontWeight.w500),
                                   ),
                                 ],
@@ -376,11 +376,10 @@ class ArticlePage extends StatelessWidget {
                                     children: [
                                       Text(
                                         "Covid",
-                                        style: GoogleFonts.poppins(
+                                        style: GoogleFonts.openSans(
                                             fontSize: 10,
                                             fontWeight: FontWeight.w500,
-                                            color: const Color.fromARGB(
-                                                255, 6, 110, 102)),
+                                            color: bluePrimaryColor),
                                       ),
                                     ]),
                               ),
@@ -390,7 +389,7 @@ class ArticlePage extends StatelessWidget {
                                   const EdgeInsets.symmetric(horizontal: 15),
                               child: Text(
                                 "Bandingkan Vaksin Covid-19 AstraZeneca dan Sinovac",
-                                style: GoogleFonts.inter(
+                                style: GoogleFonts.openSans(
                                     fontSize: 13.sp,
                                     fontWeight: FontWeight.w600,
                                     color: const Color.fromARGB(255, 0, 0, 0)),
@@ -406,7 +405,7 @@ class ArticlePage extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Jun 10, 2024 ",
-                                    style: GoogleFonts.poppins(
+                                    style: GoogleFonts.openSans(
                                         fontSize: 11.sp,
                                         fontWeight: FontWeight.w300),
                                   ),
@@ -415,9 +414,9 @@ class ArticlePage extends StatelessWidget {
                                   ),
                                   Text(
                                     "Dibaca 5 menit",
-                                    style: GoogleFonts.poppins(
+                                    style: GoogleFonts.openSans(
                                         fontSize: 11.sp,
-                                        color: const Color.fromARGB(255, 0, 136, 102),
+                                        color: bluePrimaryColor,
                                         fontWeight: FontWeight.w500),
                                   ),
                                 ],
@@ -471,11 +470,10 @@ class ArticlePage extends StatelessWidget {
                                     children: [
                                       Text(
                                         "Covid",
-                                        style: GoogleFonts.poppins(
+                                        style: GoogleFonts.openSans(
                                             fontSize: 10,
                                             fontWeight: FontWeight.w500,
-                                            color: const Color.fromARGB(
-                                                255, 6, 110, 102)),
+                                            color: bluePrimaryColor),
                                       ),
                                     ]),
                               ),
@@ -501,7 +499,7 @@ class ArticlePage extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Jun 10, 2024 ",
-                                    style: GoogleFonts.poppins(
+                                    style: GoogleFonts.openSans(
                                         fontSize: 11.sp,
                                         fontWeight: FontWeight.w300),
                                   ),
@@ -510,9 +508,9 @@ class ArticlePage extends StatelessWidget {
                                   ),
                                   Text(
                                     "Dibaca 5 menit",
-                                    style: GoogleFonts.poppins(
+                                    style: GoogleFonts.openSans(
                                         fontSize: 11.sp,
-                                        color: const Color.fromARGB(255, 0, 136, 102),
+                                        color: bluePrimaryColor,
                                         fontWeight: FontWeight.w500),
                                   ),
                                 ],
@@ -535,7 +533,7 @@ class ArticlePage extends StatelessWidget {
               children: [
                 Text(
                   "Artikel Terkait",
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.montserrat(
                     fontSize: 18,
                     fontWeight: FontWeight.w500,
                   ),

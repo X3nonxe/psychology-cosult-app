@@ -36,7 +36,7 @@ class _TabBarExampleState extends State<MessageTabAll>
         title: Center(
           child: Text(
             "Pesan",
-            style: GoogleFonts.poppins(color: Colors.black, fontSize: 18.sp),
+            style: GoogleFonts.montserrat(color: Colors.black, fontSize: 18.sp),
           ),
         ),
         centerTitle: false,

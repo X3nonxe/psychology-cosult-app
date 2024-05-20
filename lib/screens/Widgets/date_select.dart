@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class DateSelect extends StatefulWidget {
@@ -31,9 +32,7 @@ class _DateSelectState extends State<DateSelect> {
           height: MediaQuery.of(context).size.height * 0.02,
           width: MediaQuery.of(context).size.width * 0.15,
           decoration: BoxDecoration(
-            color: isSelected
-                ? const Color.fromARGB(255, 2, 179, 149)
-                : Colors.white,
+            color: isSelected ? bluePrimaryColor : Colors.white,
             borderRadius: BorderRadius.circular(18),
             border: Border.all(color: Colors.black12),
           ),
@@ -44,14 +43,14 @@ class _DateSelectState extends State<DateSelect> {
               children: [
                 Text(
                   widget.maintext,
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.openSans(
                     fontSize: 15.sp,
                     color: isSelected ? Colors.white : Colors.black54,
                   ),
                 ),
                 Text(
                   widget.date,
-                  style: GoogleFonts.inter(
+                  style: GoogleFonts.openSans(
                     fontSize: 18.sp,
                     color: isSelected
                         ? Colors.white

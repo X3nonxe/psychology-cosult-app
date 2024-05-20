@@ -4,6 +4,7 @@ import 'package:konsultasi_psikologi/screens/Login-SignUp/login_signup.dart';
 import 'package:konsultasi_psikologi/screens/On-Board/on_board1.dart';
 import 'package:konsultasi_psikologi/screens/On-Board/on_board2.dart';
 import 'package:konsultasi_psikologi/screens/On-Board/on_board3.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -23,7 +24,7 @@ class _OnBoardingState extends State<OnBoarding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+        body: Stack(
       children: [
         PageView(
             controller: _controller,
@@ -38,7 +39,11 @@ class _OnBoardingState extends State<OnBoarding> {
               OnBoard3(),
             ]),
         Container(
-          alignment: const Alignment(-0.6, 0.75),
+          // alignment: const Alignment(-0.6, 0.75),
+          margin: EdgeInsets.only(
+              top: MediaQuery.of(context).size.height * 0.85,
+              left: MediaQuery.of(context).size.width * 0.05,
+              right: MediaQuery.of(context).size.width * 0.05),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -48,7 +53,8 @@ class _OnBoardingState extends State<OnBoarding> {
                   },
                   child: Text(
                     "Lewati",
-                    style: GoogleFonts.inter(fontSize: 15, color: Colors.grey),
+                    style:
+                        GoogleFonts.openSans(fontSize: 15, color: Colors.grey),
                   )),
               SmoothPageIndicator(
                 controller: _controller,
@@ -59,8 +65,8 @@ class _OnBoardingState extends State<OnBoarding> {
                     dotWidth: 14.0,
                     dotHeight: 7.0,
                     strokeWidth: 1.5,
-                    dotColor: Color.fromARGB(255, 170, 255, 237),
-                    activeDotColor: Color.fromARGB(255, 3, 190, 150)),
+                    dotColor: dotColor,
+                    activeDotColor: bluePrimaryColor),
               ),
               onLastpage
                   ? GestureDetector(
@@ -75,7 +81,7 @@ class _OnBoardingState extends State<OnBoarding> {
                         height: MediaQuery.of(context).size.height * 0.05,
                         width: MediaQuery.of(context).size.width * 0.3,
                         decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 3, 190, 150),
+                            color: bluePrimaryColor,
                             borderRadius: BorderRadius.circular(35)),
                         child: Center(
                           child: Row(
@@ -83,9 +89,9 @@ class _OnBoardingState extends State<OnBoarding> {
                             children: [
                               Text(
                                 "Selesai ",
-                                style: GoogleFonts.inter(
+                                style: GoogleFonts.openSans(
                                     fontSize: 16.sp,
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
                                     color: Colors.white,
                                     letterSpacing: 1),
                               ),
@@ -109,7 +115,7 @@ class _OnBoardingState extends State<OnBoarding> {
                         height: MediaQuery.of(context).size.height * 0.05,
                         width: MediaQuery.of(context).size.width * 0.3,
                         decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 3, 190, 150),
+                            color: bluePrimaryColor,
                             borderRadius: BorderRadius.circular(35)),
                         child: Center(
                           child: Row(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class Article extends StatelessWidget {
@@ -9,7 +10,7 @@ class Article extends StatelessWidget {
   final String image;
 
   const Article({
-    super.key, 
+    super.key,
     required this.mainText,
     required this.dateText,
     required this.duration,
@@ -48,7 +49,7 @@ class Article extends StatelessWidget {
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(
                 mainText,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.openSans(
                     fontSize: 13.sp, fontWeight: FontWeight.w700),
               ),
               Expanded(
@@ -56,7 +57,7 @@ class Article extends StatelessWidget {
                   children: [
                     Text(
                       dateText,
-                      style: GoogleFonts.poppins(
+                      style: GoogleFonts.openSans(
                           fontSize: 12.sp, fontWeight: FontWeight.w300),
                     ),
                     const SizedBox(
@@ -64,10 +65,10 @@ class Article extends StatelessWidget {
                     ),
                     Text(
                       duration,
-                      style: GoogleFonts.poppins(
+                      style: GoogleFonts.openSans(
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w500,
-                        color: const Color.fromARGB(255, 0, 136, 102),
+                        color: bluePrimaryColor,
                       ),
                     ),
                   ],

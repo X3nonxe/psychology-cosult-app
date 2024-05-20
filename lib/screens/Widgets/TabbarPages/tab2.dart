@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class Tab2 extends StatelessWidget {
@@ -33,7 +34,7 @@ class Tab2 extends StatelessWidget {
                     ),
                     child: Image.asset("lib/icons/lock.png"),
                   ),
-                  prefixIconColor: const Color.fromARGB(255, 3, 190, 150),
+                  prefixIconColor: bluePrimaryColor,
                   label: const Text("Masukkan password anda"),
                   floatingLabelBehavior: FloatingLabelBehavior.never,
                   border: OutlineInputBorder(
@@ -51,7 +52,7 @@ class Tab2 extends StatelessWidget {
               // Perform verification or other actions here
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 3, 190, 150),
+              backgroundColor: bluePrimaryColor,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
@@ -59,8 +60,8 @@ class Tab2 extends StatelessWidget {
             child: Text(
               "Ubah Password",
               textAlign: TextAlign.center,
-              style: GoogleFonts.poppins(
-                fontSize: 18.sp,
+              style: GoogleFonts.openSans(
+                fontSize: 17.sp,
                 color: const Color.fromARGB(255, 255, 255, 255),
                 fontWeight: FontWeight.w500,
                 letterSpacing: 0,

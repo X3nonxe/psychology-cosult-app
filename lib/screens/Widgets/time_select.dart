@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 
 class TimeSelect extends StatefulWidget {
   final String mainText;
@@ -26,9 +27,7 @@ class _timeSelectState extends State<TimeSelect> {
         height: MediaQuery.of(context).size.height * 0.05,
         width: MediaQuery.of(context).size.width * 0.2700,
         decoration: BoxDecoration(
-          color: isSelected
-              ? const Color.fromARGB(255, 2, 179, 149)
-              : Colors.white,
+          color: isSelected ? bluePrimaryColor : Colors.white,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: Colors.black12),
         ),

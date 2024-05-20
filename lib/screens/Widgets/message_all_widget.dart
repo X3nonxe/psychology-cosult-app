@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 
 class MessageAllWidget extends StatelessWidget {
   final String maintext;
@@ -32,7 +33,7 @@ class MessageAllWidget extends StatelessWidget {
               height: MediaQuery.of(context).size.height * 0.09,
               width: MediaQuery.of(context).size.width * 0.1500,
               decoration: BoxDecoration(
-                  color: Colors.green,
+                  color: bluePrimaryColor,
                   shape: BoxShape.circle,
                   image: DecorationImage(
                       image: AssetImage(image),
@@ -54,7 +55,7 @@ class MessageAllWidget extends StatelessWidget {
                     //Main text here "lib/icons/male-doctor.png"
                     Text(
                       maintext,
-                      style: GoogleFonts.poppins(
+                      style: GoogleFonts.montserrat(
                         fontSize: 15,
                         color: Colors.black,
                         fontWeight: FontWeight.w500,
@@ -63,7 +64,7 @@ class MessageAllWidget extends StatelessWidget {
                     //Subtext here e.g  "I don,t have any fever, but headchace..."
                     Text(
                       subtext,
-                      style: GoogleFonts.poppins(
+                      style: GoogleFonts.openSans(
                         fontSize: 12,
                         color: Colors.black,
                         fontWeight: FontWeight.w300,
@@ -87,7 +88,7 @@ class MessageAllWidget extends StatelessWidget {
                   height: 16,
                   width: 16,
                   decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 2, 134, 117),
+                    color: bluePrimaryColor,
                     shape: BoxShape.circle,
                   ),
                   child: Row(

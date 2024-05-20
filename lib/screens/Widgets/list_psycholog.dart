@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class ListPsycholog extends StatelessWidget {
@@ -57,13 +58,13 @@ class ListPsycholog extends StatelessWidget {
                   //Main text
                   Text(
                     maintext,
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.openSans(
                         fontSize: 13.sp, fontWeight: FontWeight.bold),
                   ),
                   //Sub text
                   Text(
                     subtext,
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.openSans(
                         fontSize: 11.sp,
                         color: Colors.black45,
                         fontWeight: FontWeight.bold),
@@ -95,9 +96,9 @@ class ListPsycholog extends StatelessWidget {
                           ),
                           Text(
                             numRating,
-                            style: GoogleFonts.poppins(
+                            style: GoogleFonts.openSans(
                                 fontSize: 11.sp,
-                                color: const Color.fromARGB(255, 4, 179, 120),
+                                color: bluePrimaryColor,
                                 fontWeight: FontWeight.bold),
                           ),
                         ]),

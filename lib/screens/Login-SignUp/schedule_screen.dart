@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:konsultasi_psikologi/screens/Views/schedule_tab1.dart';
 import 'package:konsultasi_psikologi/screens/Views/schedule_tab2.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class SheduleScreen extends StatefulWidget {
@@ -33,7 +34,7 @@ class _TabBarExampleState extends State<SheduleScreen>
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
-          "Konsultasi Psikolog",
+          "Jadwal Konsultasi",
           style: GoogleFonts.poppins(color: Colors.black, fontSize: 18.sp),
         ),
         centerTitle: false,
@@ -82,7 +83,7 @@ class _TabBarExampleState extends State<SheduleScreen>
                               child: TabBar(
                                 indicator: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
-                                  color: const Color.fromARGB(255, 2, 179, 149),
+                                  color: bluePrimaryColor,
                                 ),
                                 indicatorSize: TabBarIndicatorSize.values[0],
                                 indicatorColor:

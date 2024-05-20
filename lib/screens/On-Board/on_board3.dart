@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class OnBoard3 extends StatelessWidget {
@@ -47,10 +48,10 @@ class OnBoard3 extends StatelessWidget {
                   padding: const EdgeInsets.all(25),
                   child: Text(
                     "Dapatkan konsultasi online\nyang mudah dan nyaman",
-                    style: GoogleFonts.inter(
+                    style: GoogleFonts.montserrat(
                         fontSize: 18.sp,
-                        fontWeight: FontWeight.bold,
-                        color: const Color.fromARGB(255, 37, 37, 37)),
+                        fontWeight: FontWeight.w600,
+                        color: blackColor),
                   ),
                 ),
               )

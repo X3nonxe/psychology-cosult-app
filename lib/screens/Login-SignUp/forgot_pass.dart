@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:konsultasi_psikologi/screens/Login-SignUp/login.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/TabbarPages/tab1.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/TabbarPages/tab2.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -43,7 +44,8 @@ class _TabBarExampleState extends State<ForgotPass>
             Navigator.push(
                 context,
                 PageTransition(
-                    type: PageTransitionType.topToBottom, child: const Login()));
+                    type: PageTransitionType.topToBottom,
+                    child: const Login()));
           },
         ),
         backgroundColor: Colors.white,
@@ -64,7 +66,7 @@ class _TabBarExampleState extends State<ForgotPass>
                 children: [
                   Text(
                     "Lupa password?",
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.montserrat(
                       fontSize: 20.sp,
                       fontWeight: FontWeight.w600,
                     ),
@@ -79,7 +81,7 @@ class _TabBarExampleState extends State<ForgotPass>
                 children: [
                   Text(
                     "Masukkan email atau nomor telepon Anda, kami\nakan mengirimkan kode konfirmasi kepada Anda",
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.openSans(
                         fontSize: 14.sp,
                         fontWeight: FontWeight.w400,
                         color: Colors.black54),
@@ -116,8 +118,7 @@ class _TabBarExampleState extends State<ForgotPass>
                                 indicatorColor:
                                     const Color.fromARGB(255, 241, 241, 241),
                                 unselectedLabelColor: Colors.grey,
-                                labelColor:
-                                    const Color.fromARGB(255, 3, 190, 150),
+                                labelColor: bluePrimaryColor,
                                 controller: tabController,
                                 tabs: const [
                                   Tab(

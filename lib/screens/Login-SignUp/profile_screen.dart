@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/profile_list.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -9,7 +10,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 3, 226, 215),
+      backgroundColor: bluePrimaryColor,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -64,7 +65,7 @@ class ProfileScreen extends StatelessWidget {
               children: [
                 Text(
                   "Amelia Renata",
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.montserrat(
                       fontSize: 16.sp,
                       fontWeight: FontWeight.w600,
                       color: Colors.white),
@@ -94,7 +95,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       Text(
                         "Kalori",
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.openSans(
                             fontSize: 13.sp,
                             fontWeight: FontWeight.w600,
                             color: const Color.fromARGB(255, 245, 243, 243)),
@@ -104,7 +105,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       Text(
                         "103lbs",
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.openSans(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w600,
                             color: const Color.fromARGB(255, 255, 255, 255)),
@@ -131,7 +132,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       Text(
                         "Berat",
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.openSans(
                             fontSize: 13.sp,
                             fontWeight: FontWeight.w600,
                             color: const Color.fromARGB(255, 245, 243, 243)),
@@ -141,7 +142,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       Text(
                         "756cal",
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.openSans(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w600,
                             color: const Color.fromARGB(255, 255, 255, 255)),
@@ -168,7 +169,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       Text(
                         "Detak jantung",
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.openSans(
                             fontSize: 13.sp,
                             fontWeight: FontWeight.w600,
                             color: const Color.fromARGB(255, 245, 243, 243)),
@@ -178,7 +179,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       Text(
                         "215bpm",
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.openSans(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w600,
                             color: const Color.fromARGB(255, 255, 255, 255)),

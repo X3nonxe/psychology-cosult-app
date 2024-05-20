@@ -38,14 +38,14 @@ class ChatPsycholog extends StatelessWidget {
                     ),
                     Text(
                       "Marcus Horizon",
-                      style: GoogleFonts.poppins(
+                      style: GoogleFonts.openSans(
                           fontSize: 17.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color.fromARGB(255, 41, 41, 41)),
                     ),
                     Text(
                       "10 menit yang lalu",
-                      style: GoogleFonts.poppins(
+                      style: GoogleFonts.openSans(
                           fontSize: 11.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color.fromARGB(255, 92, 92, 92)),

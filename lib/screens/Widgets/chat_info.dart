@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class ChatInfo extends StatelessWidget {
@@ -21,14 +22,14 @@ class ChatInfo extends StatelessWidget {
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Text(
             "Mulai Konsultasi",
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.montserrat(
                 fontSize: 16.sp,
                 fontWeight: FontWeight.w500,
-                color: const Color.fromARGB(255, 0, 131, 113)),
+                color: bluePrimaryColor),
           ),
           Text(
             "Anda dapat memulai konsultasi dengan psikolog yang Anda pilih",
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.openSans(
                 fontSize: 12.sp,
                 fontWeight: FontWeight.w500,
                 color: const Color.fromARGB(255, 136, 136, 136)),

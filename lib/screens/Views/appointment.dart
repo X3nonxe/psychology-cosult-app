@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:konsultasi_psikologi/screens/Views/psycholog_details_screen.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/psycholog_list.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -31,7 +32,7 @@ class Appointment extends StatelessWidget {
           ),
         ),
         title: Text(
-          "Psikolog",
+          "Appointment",
           style: GoogleFonts.poppins(color: Colors.black, fontSize: 18.sp),
         ),
         centerTitle: true,
@@ -419,7 +420,7 @@ class Appointment extends StatelessWidget {
                             height: MediaQuery.of(context).size.height * 0.06,
                             width: MediaQuery.of(context).size.width * 0.4300,
                             decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 2, 179, 149),
+                              color: bluePrimaryColor,
                               borderRadius: BorderRadius.circular(30),
                             ),
                             child: Row(
@@ -427,7 +428,7 @@ class Appointment extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Bayar Sekarang",
-                                    style: GoogleFonts.poppins(
+                                    style: GoogleFonts.openSans(
                                         fontSize: 15.sp,
                                         color: Colors.white,
                                         fontWeight: FontWeight.w500),

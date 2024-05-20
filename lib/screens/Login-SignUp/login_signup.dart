@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:konsultasi_psikologi/screens/Login-SignUp/login.dart';
 import 'package:konsultasi_psikologi/screens/Login-SignUp/register.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -28,7 +29,7 @@ class LoginSignup extends StatelessWidget {
           children: [
             Text(
               "Mulai sekarang!",
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.montserrat(
                   fontSize: 22.sp,
                   color: const Color.fromARGB(211, 14, 13, 13),
                   fontWeight: FontWeight.w700,
@@ -46,7 +47,7 @@ class LoginSignup extends StatelessWidget {
               child: Text(
                 "Masuk untuk menikmati fitur yang kami \nsediakan, dan tetap sehat",
                 textAlign: TextAlign.center,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.openSans(
                     fontSize: 15.sp,
                     color: const Color.fromARGB(211, 14, 13, 13),
                     fontWeight: FontWeight.w400,
@@ -66,10 +67,11 @@ class LoginSignup extends StatelessWidget {
               Navigator.pushReplacement(
                   context,
                   PageTransition(
-                      type: PageTransitionType.rightToLeft, child: const Login()));
+                      type: PageTransitionType.rightToLeft,
+                      child: const Login()));
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 3, 190, 150),
+              backgroundColor: bluePrimaryColor,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
@@ -77,7 +79,7 @@ class LoginSignup extends StatelessWidget {
             child: Text(
               "Login",
               textAlign: TextAlign.center,
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.openSans(
                 fontSize: 18.sp,
                 color: const Color.fromARGB(255, 255, 255, 255),
                 fontWeight: FontWeight.w500,
@@ -100,7 +102,8 @@ class LoginSignup extends StatelessWidget {
               Navigator.pushReplacement(
                   context,
                   PageTransition(
-                      type: PageTransitionType.rightToLeft, child: const Register()));
+                      type: PageTransitionType.rightToLeft,
+                      child: const Register()));
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color.fromARGB(255, 255, 255, 255),
@@ -111,9 +114,9 @@ class LoginSignup extends StatelessWidget {
             child: Text(
               "Sign up",
               textAlign: TextAlign.center,
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.openSans(
                 fontSize: 18.sp,
-                color: const Color.fromARGB(255, 3, 190, 150),
+                color: bluePrimaryColor,
                 fontWeight: FontWeight.w500,
                 letterSpacing: 0,
               ),

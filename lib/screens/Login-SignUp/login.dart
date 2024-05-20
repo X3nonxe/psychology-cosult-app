@@ -6,6 +6,7 @@ import 'package:konsultasi_psikologi/screens/Login-SignUp/register.dart';
 import 'package:konsultasi_psikologi/screens/Views/homepage.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/auth_social_login.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/auth_text_field.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -32,8 +33,8 @@ class Login extends StatelessWidget {
         ),
         centerTitle: true,
         title: Text(
-          "Login",
-          style: GoogleFonts.inter(
+          "Masuk",
+          style: GoogleFonts.montserrat(
               color: Colors.black87,
               fontSize: 22.sp,
               fontWeight: FontWeight.w700,
@@ -50,7 +51,8 @@ class Login extends StatelessWidget {
             height: 40,
           ),
           //Text field Login import from Auth_text_field widget
-          const AuthTextField(text: "Masukkan Email", icon: "lib/icons/email.png"),
+          const AuthTextField(
+              text: "Masukkan Email", icon: "lib/icons/email.png"),
           const SizedBox(
             height: 5,
           ),
@@ -68,9 +70,9 @@ class Login extends StatelessWidget {
               },
               child: Text(
                 "Lupa Password?",
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.openSans(
                     fontSize: 15.sp,
-                    color: const Color.fromARGB(255, 3, 190, 150),
+                    color: bluePrimaryColor,
                     fontWeight: FontWeight.w500),
               ),
             )
@@ -86,7 +88,7 @@ class Login extends StatelessWidget {
                 // Perform verification or other actions here
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 3, 190, 150),
+                backgroundColor: bluePrimaryColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
@@ -96,12 +98,13 @@ class Login extends StatelessWidget {
                   Navigator.pushReplacement(
                       context,
                       PageTransition(
-                          type: PageTransitionType.fade, child: const Homepage()));
+                          type: PageTransitionType.fade,
+                          child: const Homepage()));
                 },
                 child: Text(
-                  "Login",
+                  "Masuk",
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.openSans(
                     fontSize: 18.sp,
                     color: const Color.fromARGB(255, 255, 255, 255),
                     fontWeight: FontWeight.w500,
@@ -131,10 +134,10 @@ class Login extends StatelessWidget {
                           child: const Register()));
                 },
                 child: Text(
-                  "Masuk",
-                  style: GoogleFonts.poppins(
+                  "Daftar",
+                  style: GoogleFonts.openSans(
                     fontSize: 15.sp,
-                    color: const Color.fromARGB(255, 3, 190, 150),
+                    color: bluePrimaryColor,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -170,7 +173,8 @@ class Login extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const AuthSocialLogins(logo: "images/apple.png", text: "Masuk dengan Apple"),
+          const AuthSocialLogins(
+              logo: "images/apple.png", text: "Masuk dengan Apple"),
           const SizedBox(
             height: 20,
           ),

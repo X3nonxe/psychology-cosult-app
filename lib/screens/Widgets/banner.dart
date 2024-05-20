@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class BannerWidget extends StatelessWidget {
@@ -26,7 +27,7 @@ class BannerWidget extends StatelessWidget {
               ),
               Text(
                 "Lindungi diri Anda\ndari stres dan depresi",
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.montserrat(
                   fontSize: 16.sp,
                   fontWeight: FontWeight.w700,
                   color: Colors.black87,
@@ -39,14 +40,14 @@ class BannerWidget extends StatelessWidget {
                 height: MediaQuery.of(context).size.height * 0.030,
                 width: MediaQuery.of(context).size.width * 0.3,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 4, 138, 109),
+                  color: bluePrimaryColor,
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child:
                     Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Text(
                     "Pelajari lebih lanjut",
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.openSans(
                         fontSize: 12.sp, color: Colors.white),
                   ),
                 ]),

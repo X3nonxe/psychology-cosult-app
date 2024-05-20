@@ -7,6 +7,7 @@ import 'package:konsultasi_psikologi/screens/Widgets/article.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/banner.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/list_icon.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/list_psycholog.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -38,7 +39,7 @@ class Dashboard extends StatelessWidget {
             const SizedBox(height: 35),
             Text(
               "Temukan solusi konsultasi yang Anda inginkan",
-              style: GoogleFonts.inter(
+              style: GoogleFonts.montserrat(
                   color: const Color.fromARGB(255, 51, 47, 47),
                   fontSize: 20.sp,
                   fontWeight: FontWeight.w600,
@@ -92,7 +93,7 @@ class Dashboard extends StatelessWidget {
                       ),
                     ),
                   ),
-                  prefixIconColor: const Color.fromARGB(255, 3, 190, 150),
+                  prefixIconColor: bluePrimaryColor,
                   label: const Text("Cari psikolog, artikel, topik..."),
                   floatingLabelBehavior: FloatingLabelBehavior.never,
                   border: OutlineInputBorder(
@@ -107,15 +108,15 @@ class Dashboard extends StatelessWidget {
             height: 20,
           ),
           //Body Start fro here
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ListIcons(icon: "lib/icons/Doctor.png", text: "Doctor"),
-              ListIcons(icon: "lib/icons/Pharmacy.png", text: "Pharmacy"),
-              ListIcons(icon: "lib/icons/Hospital.png", text: "Hospital"),
-              ListIcons(icon: "lib/icons/Ambulance.png", text: "Ambulance"),
-            ],
-          ),
+          // const Row(
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          //   children: [
+          //     ListIcons(icon: "lib/icons/Doctor.png", text: "Doctor"),
+          //     ListIcons(icon: "lib/icons/Pharmacy.png", text: "Pharmacy"),
+          //     ListIcons(icon: "lib/icons/Hospital.png", text: "Hospital"),
+          //     ListIcons(icon: "lib/icons/Ambulance.png", text: "Ambulance"),
+          //   ],
+          // ),
 
           //List icons (Can Edit in Widgets )
           const SizedBox(
@@ -133,7 +134,7 @@ class Dashboard extends StatelessWidget {
               children: [
                 Text(
                   "Top Psikolog",
-                  style: GoogleFonts.inter(
+                  style: GoogleFonts.montserrat(
                     fontSize: 18.sp,
                     fontWeight: FontWeight.w700,
                     color: const Color.fromARGB(255, 46, 46, 46),
@@ -149,9 +150,9 @@ class Dashboard extends StatelessWidget {
                   },
                   child: Text(
                     "Lihat semua",
-                    style: GoogleFonts.inter(
+                    style: GoogleFonts.openSans(
                       fontSize: 16.sp,
-                      color: const Color.fromARGB(255, 3, 190, 150),
+                      color: bluePrimaryColor,
                     ),
                   ),
                 ),
@@ -202,7 +203,7 @@ class Dashboard extends StatelessWidget {
               children: [
                 Text(
                   "Artikel Terkait",
-                  style: GoogleFonts.inter(
+                  style: GoogleFonts.montserrat(
                     fontSize: 18.sp,
                     fontWeight: FontWeight.w700,
                     color: const Color.fromARGB(255, 46, 46, 46),
@@ -218,9 +219,9 @@ class Dashboard extends StatelessWidget {
                   },
                   child: Text(
                     "Lihat semua",
-                    style: GoogleFonts.inter(
+                    style: GoogleFonts.openSans(
                       fontSize: 16.sp,
-                      color: const Color.fromARGB(255, 3, 190, 150),
+                      color: bluePrimaryColor,
                     ),
                   ),
                 ),

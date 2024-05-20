@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:konsultasi_psikologi/screens/Views/homepage.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/chat_info.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/chat_psycholog.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -34,7 +35,7 @@ class ChatScreen extends StatelessWidget {
         // Title of the chat screen
         title: Text(
           "Marcus Horizon",
-          style: GoogleFonts.poppins(
+          style: GoogleFonts.montserrat(
               color: Colors.black,
               fontWeight: FontWeight.w500,
               fontSize: 17.sp),
@@ -136,7 +137,7 @@ class ChatScreen extends StatelessWidget {
                       height: MediaQuery.of(context).size.height * 0.10,
                       width: MediaQuery.of(context).size.width * 0.5,
                       decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 0, 131, 113),
+                        color: bluePrimaryColor,
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(0),
                           topLeft: Radius.circular(10),
@@ -211,7 +212,7 @@ class ChatScreen extends StatelessWidget {
                       height: MediaQuery.of(context).size.height * 0.09,
                       width: MediaQuery.of(context).size.width * 0.5,
                       decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 0, 131, 113),
+                        color: bluePrimaryColor,
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(0),
                           topLeft: Radius.circular(10),
@@ -278,7 +279,7 @@ class ChatScreen extends StatelessWidget {
                             child: Image.asset("lib/icons/pin.png"),
                           ),
                         ),
-                        prefixIconColor: const Color.fromARGB(255, 3, 190, 150),
+                        prefixIconColor: bluePrimaryColor,
                         label: const Text("Kirim pesan..."),
                         floatingLabelBehavior: FloatingLabelBehavior.never,
                         border: OutlineInputBorder(

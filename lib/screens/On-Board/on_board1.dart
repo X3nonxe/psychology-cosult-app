@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class OnBoard1 extends StatelessWidget {
@@ -46,11 +47,12 @@ class OnBoard1 extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(25),
                   child: Text(
-                    "Konsultasi dengan psikolog \npilihanmu sekarang lebih mudah",
-                    style: GoogleFonts.inter(
-                        fontSize: 18.sp,
-                        fontWeight: FontWeight.bold,
-                        color: const Color.fromARGB(255, 37, 37, 37)),
+                    "Konsultasi dengan psikolog pilihanmu sekarang lebih mudah",
+                    style: GoogleFonts.montserrat(
+                      fontSize: 18.sp,
+                      fontWeight: FontWeight.w600,
+                      color: blackColor,
+                    ),
                   ),
                 ),
               )

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class SecheduleCard extends StatelessWidget {
@@ -11,7 +12,8 @@ class SecheduleCard extends StatelessWidget {
   final String confirmation;
 
   const SecheduleCard(
-      {super.key, required this.mainText,
+      {super.key,
+      required this.mainText,
       required this.subText,
       required this.date,
       required this.confirmation,
@@ -42,12 +44,12 @@ class SecheduleCard extends StatelessWidget {
                       children: [
                         Text(
                           mainText,
-                          style: GoogleFonts.poppins(
+                          style: GoogleFonts.montserrat(
                               fontSize: 17.sp, fontWeight: FontWeight.w600),
                         ),
                         Text(
                           subText,
-                          style: GoogleFonts.poppins(
+                          style: GoogleFonts.openSans(
                               fontSize: 12.sp,
                               fontWeight: FontWeight.w600,
                               color: const Color.fromARGB(255, 99, 99, 99)),
@@ -87,7 +89,7 @@ class SecheduleCard extends StatelessWidget {
               ),
               Text(
                 date,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.openSans(
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w600,
                     color: const Color.fromARGB(255, 99, 99, 99)),
@@ -104,7 +106,7 @@ class SecheduleCard extends StatelessWidget {
               ),
               Text(
                 time,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.openSans(
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w600,
                     color: const Color.fromARGB(255, 99, 99, 99)),
@@ -121,7 +123,7 @@ class SecheduleCard extends StatelessWidget {
               ),
               Text(
                 confirmation,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.openSans(
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w600,
                     color: const Color.fromARGB(255, 99, 99, 99)),
@@ -145,7 +147,7 @@ class SecheduleCard extends StatelessWidget {
                       children: [
                         Text(
                           "Batalkan",
-                          style: GoogleFonts.poppins(
+                          style: GoogleFonts.openSans(
                               fontSize: 15.sp,
                               fontWeight: FontWeight.w600,
                               color: const Color.fromARGB(255, 61, 61, 61)),
@@ -156,7 +158,7 @@ class SecheduleCard extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.04500,
                   width: MediaQuery.of(context).size.width * 0.3800,
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 4, 190, 144),
+                    color: bluePrimaryColor,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Row(
@@ -164,7 +166,7 @@ class SecheduleCard extends StatelessWidget {
                       children: [
                         Text(
                           "Jadwalkan Ulang",
-                          style: GoogleFonts.poppins(
+                          style: GoogleFonts.openSans(
                               fontSize: 15.sp,
                               fontWeight: FontWeight.w600,
                               color: const Color.fromARGB(255, 252, 252, 252)),

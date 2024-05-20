@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:konsultasi_psikologi/screens/On-Board/on_boarding.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 
 class Screen1 extends StatefulWidget {
   const Screen1({super.key});
@@ -27,7 +28,7 @@ class _Screen1State extends State<Screen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 1, 77, 60),
+      backgroundColor: bluePrimaryColor,
       body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,

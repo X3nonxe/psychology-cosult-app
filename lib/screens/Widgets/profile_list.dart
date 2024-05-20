@@ -7,7 +7,11 @@ class ProfileList extends StatelessWidget {
   final String image;
   final Color color;
 
-  const ProfileList({super.key, required this.image, required this.title, required this.color});
+  const ProfileList(
+      {super.key,
+      required this.image,
+      required this.title,
+      required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +44,7 @@ class ProfileList extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Text(
                       title,
-                      style: GoogleFonts.inter(
+                      style: GoogleFonts.openSans(
                           fontSize: 17.sp,
                           fontWeight: FontWeight.w600,
                           color: color),

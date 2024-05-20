@@ -5,6 +5,7 @@ import 'package:konsultasi_psikologi/screens/Login-SignUp/profile_screen.dart';
 import 'package:konsultasi_psikologi/screens/Login-SignUp/schedule_screen.dart';
 import 'package:konsultasi_psikologi/screens/Views/dashboard_screen.dart';
 import 'package:konsultasi_psikologi/screens/Widgets/TabbarPages/message_tab_all.dart';
+import 'package:konsultasi_psikologi/utils/color_pallate.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -42,7 +43,7 @@ class _HomepageState extends State<Homepage> {
         height: 80,
         splashSpeedInMilliseconds: 300,
         gapLocation: GapLocation.none,
-        activeColor: const Color.fromARGB(255, 0, 190, 165),
+        activeColor: bluePrimaryColor,
         inactiveColor: const Color.fromARGB(255, 223, 219, 219),
         onTap: (int tappedIndex) {
           setState(() {
